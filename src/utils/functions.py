@@ -9,3 +9,8 @@ def lerPotencias():
     tabela = pDF([linhas.strip().split(',') for linhas in open('src/constants/potencias.txt').readlines()])
     medidas = pDF([[tabela[1][i],tabela[2][i]] for i in range(len(tabela[1]))],index=tabela[0].values,columns=['simbolo','exp10'])
     return medidas 
+
+def convertZeros(unidade:str):
+    if '³' in unidade: return 3
+    elif '²' in unidade: return 2
+    else: return 1

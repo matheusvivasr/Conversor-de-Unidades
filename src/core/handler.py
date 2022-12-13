@@ -78,16 +78,16 @@ class BoraMofio:
         valor = float(self.numInput.get_text())
 
         #   pega a constante de proporcionalidade de cada constante
-        unitconstIn = self.units.loc[self.unitInput.get_active_text()].iat[1]
-        unitconstOut = self.units.loc[self.unitOutput.get_active_text()].iat[1]
+        unitconstIn = self.units.loc[self.unitInput.get_active_text()]
+        unitconstOut = self.units.loc[self.unitOutput.get_active_text()]
 
         #   pega a potencia da ordem de grandeza
         expoIn = int(self.pows.values[self.powInput.get_active()][1])
         expoOut = int(self.pows.values[self.powOutput.get_active()][1])
 
         #   converte a unidade e joga o valor 
-        a = Unidade(valor,unitconstIn,expoIn)
-        valorOut = a.converter(unitconstOut, expoOut)
+        a = Unidade(valor,unitconstIn.iat[0],unitconstIn.iat[1],expoIn)
+        valorOut = a.converter(unitconstOut.iat[1], expoOut,unitconstOut.iat[0])
 
         self.numOutput.set_text(str(valorOut))
         

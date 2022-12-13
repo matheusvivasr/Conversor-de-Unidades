@@ -1,4 +1,7 @@
 Litro,L,1,1
-Galão americano,gal,1000,3785
-Quarto líquido americano,qt,1057,1000
+Galão,gal,1000,3785
+Quarto líquido,qt,1057,1000
 Onça líquida,fl oz,33814,1000
+Metro cúbico,m³,1,1000
+Polegada cúbica,in³,61024,1000
+Pé cúbico,in³,1000,28317
