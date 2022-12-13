@@ -1,0 +1,15 @@
+Femto,f,15
+Pico,p,12
+Nano,n,9
+Micro,μ,6
+Mili,m,3
+Centi,c,2
+Deci,d,1
+[], ,0
+Deca,da,-1
+Hecto,h,-2
+Quilo,k,-3
+mega,M,-6
+giga,G,-9
+Tera,T,-12
+Peta,P,-15

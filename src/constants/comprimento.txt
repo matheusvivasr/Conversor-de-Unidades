@@ -1,0 +1,6 @@
+Metro,m,1,1
+Milha,mi,1,1609
+Jarda,yd,1094,1000
+Pé,ft,3281,1000
+Polegada,in,3937,100
+Milha náutica,NM,1,1852

@@ -1,0 +1,5 @@
+Grama,g,1,1
+Tonelada,T,1,1000000
+Stone,st,1,6350
+Libra,lb,10,4536
+Onça,oz,100,2835
