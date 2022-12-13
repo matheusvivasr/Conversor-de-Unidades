@@ -25,5 +25,5 @@ O botão 'Inverter', como o prório nome sugere, inverte as unidades que estão 
 ### <a id = "copiar"></a>Copiar
 Ainda não há nada para ver aqui
 
-## <a id = "texto"></a>Arquivo de texto
+### <a id = "texto"></a>Arquivo de texto
 Ainda não há nada para ver aqui
