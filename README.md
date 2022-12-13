@@ -1,7 +1,5 @@
 # Conversor de Unidades
 Trabalho final da disciplina SEL0456.
-
-## Motivação e objetivos
 O objetivo do projeto é desenvolver um conversor de unidades de medida que suporte ao menos 2 conversões entre tipos de unidade distintos.
 
 ## Dependências
