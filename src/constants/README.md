@@ -20,7 +20,7 @@ Semana,sem,1,10080
 ```
 Note que :
 - A unidade de referência é "minuto" e não necessariamente é a de menor valor.
-- Sabemos que há 60 segundos em um minuto, logo "p/q" de segundos = 60/1 pois, ao converter x minutos para segundos, multiplicamos x por 60, ou seja, fazemos **x*(p/q)**.
+- Sabemos que há 60 segundos em um minuto, logo "p/q" de segundos = 60/1 pois, ao converter x minutos para segundos, multiplicamos x por 60, ou seja, fazemos **x * (p/q)**.
 - Todas as unidades começam com letra maiúscula mas, o nome do arquivo deve ser com letra minuscula.
 
 
