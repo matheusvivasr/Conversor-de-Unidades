@@ -26,4 +26,4 @@ O botão 'Inverter', como o prório nome sugere, inverte as unidades que estão 
 Ainda não há nada para ver aqui
 
 ### <a id = "texto"></a>Arquivo de texto
-Ainda não há nada para ver aqui
+#### [Clique aqui](https://github.com/matheusvivasr/Conversor-de-Unidades/blob/master/src/constants)
