@@ -90,8 +90,6 @@
                     <property name="margin-end">10</property>
                     <property name="margin-top">5</property>
                     <property name="margin-bottom">5</property>
-                    <signal name="activate" handler="aaaaa" swapped="no"/>
-                    <signal name="changed" handler="aa" swapped="no"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>

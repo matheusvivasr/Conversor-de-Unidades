@@ -124,11 +124,10 @@ class BoraMofio:
         self.numInput.set_text(valorOut)
         self.numOutput.set_text(valorIn)
 
-#   Coisasa a arrumar se der tempo
+#   Coisas a arrumar se der tempo
 #       - trocar a Entry do Output para um Label
 #       - adicionar botao de copiar unidade formatada com unidade 
-#           '15.8ft' - Copiado!
+#           - '15.8ft' - Copiado!
 #       - adicionar uma label que forme uma frase com a conversao
-#           '300g equivalem a 0.3kg'
-#           essa label pode ser pra colocar a frase de copiar tambem
-#       - tirar os Handlers 'aa' e 'aaaaa' da Entry de input
+#           - '300g equivalem a 0.3kg'
+#           - essa label pode ser pra colocar a frase de copiar tambem
