@@ -1,8 +1,9 @@
-import gi
-gi.require_version("Gtk", "3.0")
+from gi import require_version as Gtk_version
+Gtk_version("Gtk", "3.0")
+
 from gi.repository import Gtk
 from src.models.medida import Unidade
-from src.utils.functions import lerMedidas, lerPotencias
+from src.utils.functions import lerMedidas, lerPotencias,pegarTipos
 
 def ligar(nome):
     ligar = BoraMofio(nome)
@@ -15,8 +16,15 @@ class BoraMofio:
         fileName = 'src/scripts/'+name+'.glade'
         self.builder.add_from_file(fileName)
         self.builder.connect_signals(self)
-        self.window = self.builder.get_object('janela')      
+        self.window = self.builder.get_object('janela')  
         self.window.show()
+
+    #   setando tipos de unidades disponíveis
+        self.uTipos = self.builder.get_object('unit_type')
+        self.list = Gtk.ListStore(str)
+        for n in pegarTipos():
+            self.list.append([n.capitalize()])
+        self.comboText(self.uTipos,self.list,-1)
 
     #   unidades
         self.unitInput = self.builder.get_object('unit_in')
