@@ -3,7 +3,7 @@ Gtk_version("Gtk", "3.0")
 
 from gi.repository import Gtk
 from src.models.medida import Unidade
-from src.utils.functions import lerMedidas, lerPotencias,pegarTipos
+from src.utils.functions import lerMedidas, lerPotencias, pegarTipos, arrumar, desarrumar
 
 def ligar(nome):
     ligar = BoraMofio(nome)
@@ -72,18 +72,18 @@ class BoraMofio:
         liststorePow = Gtk.ListStore(str)
         for n in range(len(self.pows.index.values)):
             liststorePow.append([self.pows.values[n][0]+self.units.loc[unit].iat[0]])
-        self.comboText(self.powInput,liststorePow,7)
+        self.comboText(self.powInput,liststorePow,5)
 #   usada de maneira similar para a saida
     def mudouUnitOut(self, box):
         unit = box.get_active_text()
         liststorePow = Gtk.ListStore(str)
         for n in range(len(self.pows.index.values)):
             liststorePow.append([self.pows.values[n][0]+self.units.loc[unit].iat[0]])
-        self.comboText(self.powOutput,liststorePow,7)
+        self.comboText(self.powOutput,liststorePow,5)
     
     #   funcao para converter os valores
     def converte(self, botao):
-        valor = float(self.numInput.get_text())
+        valor = arrumar(self.numInput.get_text())
 
         #   pega a constante de proporcionalidade de cada constante
         unitconstIn = self.units.loc[self.unitInput.get_active_text()]
@@ -97,7 +97,7 @@ class BoraMofio:
         a = Unidade(valor,unitconstIn.iat[0],unitconstIn.iat[1],expoIn)
         valorOut = a.converter(unitconstOut.iat[1], expoOut,unitconstOut.iat[0])
 
-        self.numOutput.set_text(str(valorOut))
+        self.numOutput.set_text(desarrumar(valorOut))
         
     #   funcao para trocar as unidades da entrada e saida
     def inverte(self, botao):

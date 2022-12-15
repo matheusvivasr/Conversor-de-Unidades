@@ -18,3 +18,8 @@ def convertZeros(unidade:str):
 def pegarTipos():
     tipos = [linhas.strip() for linhas in open('src/constants/tipos.txt').readlines()]
     return tipos
+
+def arrumar(numero:str):return float(numero.replace(',','.'))
+
+def desarrumar(numero:float):return str(round(numero,3)).replace('.', ',')
+    
